@@ -51,6 +51,44 @@ The brain of the operation. Powered by the **Groq API**, it follows a strict det
 * **Synthesis:** The LLM evaluates the request against the rules, detects conflicts, and formulates a plan.
 * **Safety Fallback:** If the API fails, a deterministic Python `rules.py` engine takes over to guarantee a safe response.
 
+### 🔄 Project Flow Chart
+
+```mermaid
+graph TD
+    %% Define styles
+    classDef frontend fill:#282c34,stroke:#61dafb,stroke-width:2px,color:#fff;
+    classDef backend fill:#005571,stroke:#059669,stroke-width:2px,color:#fff;
+    classDef ai fill:#f59e0b,stroke:#b45309,stroke-width:2px,color:#fff;
+    classDef db fill:#475569,stroke:#cbd5e1,stroke-width:2px,color:#fff;
+
+    subgraph "1. User Interaction"
+        UI[React Frontend / Dashboard]:::frontend
+    end
+
+    subgraph "2. Server & Data"
+        API[FastAPI Server]:::backend
+        DB[(SQLite Database)]:::db
+    end
+
+    subgraph "3. AI Pipeline (Groq)"
+        Intake[Ticket Intake]:::ai
+        RAG[Policy Lookup & RAG]:::ai
+        Eval[Conflict Detection]:::ai
+        Plan[Plan & Email Generation]:::ai
+    end
+
+    %% Flows
+    UI -->|1. Operator clicks Analyse| API
+    API -->|2. Sends Case JSON| Intake
+    Intake --> RAG
+    RAG --> Eval
+    Eval --> Plan
+    Plan -->|3. Returns Action Plan| API
+    API -->|4. Displays proposed plan| UI
+    UI -->|5. Operator clicks Record| API
+    API -->|6. Saves to immutable Audit Log| DB
+```
+
 ---
 
 ## 💻 Tech Stack
