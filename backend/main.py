@@ -181,3 +181,8 @@ def clear_case_conversation(case_id: str):
     cid = case_id.upper().strip()
     clear_conversation(cid)
     return {"ok": True, "case_id": cid}
+
+from fastapi.staticfiles import StaticFiles
+frontend_dist = PROJECT_ROOT / "frontend" / "dist"
+if frontend_dist.exists():
+    app.mount("/", StaticFiles(directory=str(frontend_dist), html=True), name="frontend")
