@@ -1,0 +1,167 @@
+[
+  {
+    "id": "REQ-01",
+    "employee": "Aditi Sharma",
+    "email": "aditi.sharma@chillstack.example",
+    "opened": "2026-09-21",
+    "request": "My laptop won't turn on at all, it's completely dead, had it about 3.5 years now.",
+    "initial_action": "Not started",
+    "source": "Section 2, page 1",
+    "topic": "laptop",
+    "notes": "3.5-year-old laptop reported dead. KB-03 requires 3 years for replacement eligibility; ASSET-Q2-2026 sets 4-year refresh cycle. Policy conflict must be surfaced. Reported failure is not verified hardware failure. Diagnosis must precede replacement routing."
+  },
+  {
+    "id": "REQ-02",
+    "employee": "Vikram Chawla",
+    "email": "vikram.chawla@chillstack.example",
+    "opened": "2026-09-21",
+    "request": "Can I get Wi-Fi access for a guest visiting our office tomorrow?",
+    "initial_action": "Not started",
+    "source": "Section 2, page 1",
+    "topic": "guest_wifi",
+    "notes": "Self-service via front-desk kiosk. 24-hour validity. No IT ticket needed."
+  },
+  {
+    "id": "REQ-03",
+    "employee": "Karan Mehta",
+    "email": "karan.mehta@chillstack.example",
+    "opened": "2026-09-21",
+    "request": "I'm locked out of my account, tried my password 6 times.",
+    "initial_action": "In progress — reset queued",
+    "source": "Section 2, page 1",
+    "topic": "password_lockout",
+    "notes": "6 failed attempts exceeds the 5-attempt threshold in KB-01. KB-01 requires manual IT unlock (not just a password reset). A reset is already queued — the existing action should be updated to include manual unlock, not treated as a duplicate."
+  },
+  {
+    "id": "REQ-04",
+    "employee": "Ritu Bhatia",
+    "email": "ritu.bhatia@chillstack.example",
+    "opened": "2026-09-22",
+    "request": "Need approval to install a data-analysis tool that's not in the software catalog.",
+    "initial_action": "Waiting on Security review",
+    "source": "Section 2, page 1",
+    "topic": "software_install",
+    "notes": "Non-catalog software. Security review already pending per KB-04. Do not duplicate or restart. Timeline: 3-5 business days from submission."
+  },
+  {
+    "id": "REQ-05",
+    "employee": "Sanjay Oberoi",
+    "email": "sanjay.oberoi@chillstack.example",
+    "opened": "2026-09-22",
+    "request": "My VPN stopped working this morning, says credentials expired.",
+    "initial_action": "Not started",
+    "source": "Section 2, page 1",
+    "topic": "vpn",
+    "notes": "VPN credentials expire every 90 days per KB-02. Employee is responsible for renewal. No renewal URL is supplied in source data."
+  },
+  {
+    "id": "REQ-06",
+    "employee": "Meera Iyer",
+    "email": "meera.iyer@chillstack.example",
+    "opened": "2026-09-22",
+    "request": "Printer on the 3rd floor keeps showing 'paper jam' even though there's no jam.",
+    "initial_action": "Investigating — technician assigned",
+    "source": "Section 2, page 1",
+    "topic": "printer",
+    "notes": "Technician already assigned per KB-05 workflow. Continue existing investigation. Confirm queue/spooler checks. Asset tag should be collected if not already on file. Avoid duplicate assignment."
+  },
+  {
+    "id": "REQ-07",
+    "employee": "Farhan Ali",
+    "email": "farhan.ali@chillstack.example",
+    "opened": "2026-09-23",
+    "request": "I've started working from home 4 days a week, how do I get a monitor?",
+    "initial_action": "Not started",
+    "source": "Section 2, pages 1-2",
+    "topic": "wfh_equipment",
+    "notes": "4 remote days/week exceeds the KB-10 threshold of 'more than 3 days/week'. Eligibility is confirmed but approval is not. Requires manager sign-off then Finance processing. IT handles shipping only after both approvals. One-time allowance — prior usage must be checked."
+  },
+  {
+    "id": "REQ-08",
+    "employee": "Ananya Reddy",
+    "email": "ananya.reddy@chillstack.example",
+    "opened": "2026-09-23",
+    "request": "I think I got a phishing email asking for my login — forwarding it to a few teammates to check.",
+    "initial_action": "Escalated to Security (auto-flagged)",
+    "source": "Section 2, page 2",
+    "topic": "security_incident",
+    "notes": "KB-09: Must report to security@chillstack.example immediately. CRITICAL: Employee must NOT forward to teammates — this is explicitly prohibited by KB-09. Auto-escalation to Security already in place. Keep Security involved. Advise stopping forwarding immediately."
+  },
+  {
+    "id": "REQ-09",
+    "employee": "Rohit Desai",
+    "email": "rohit.desai@chillstack.example",
+    "opened": "2026-09-23",
+    "request": "My mailbox is full and I can't send emails.",
+    "initial_action": "Not started",
+    "source": "Section 2, page 2",
+    "topic": "mailbox_quota",
+    "notes": "KB-06: Default 25GB; archive old mail first. Increases above 25GB require manager approval; absolute cap is 50GB. Never grant unlimited space."
+  },
+  {
+    "id": "REQ-10",
+    "employee": "Kavya Pillai",
+    "email": "kavya.pillai@chillstack.example",
+    "opened": "2026-09-23",
+    "request": "Can someone give me admin access to the finance reporting server? Need it urgently for month-end.",
+    "initial_action": "Not started",
+    "source": "Section 2, page 2",
+    "topic": "admin_access",
+    "notes": "No supplied policy authorises finance-server admin access. Must ask for business justification and route to human access reviewer. Urgency does not grant permission. Reference TK-1050 (admin access rejected for missing justification) as closed precedent — it does not block this case but the pattern is relevant."
+  },
+  {
+    "id": "REQ-11",
+    "employee": "Nikhil Bansal",
+    "email": "nikhil.bansal@chillstack.example",
+    "opened": "2026-09-24",
+    "request": "New contractor joining my team next week, they'll need VPN access.",
+    "initial_action": "Not started",
+    "source": "Section 2, page 2",
+    "topic": "vpn",
+    "notes": "KB-02: Contractors require manager approval via the access request form. Do not apply the full-time employee auto-grant rule. Nikhil (manager) must submit the approval via the access request form."
+  },
+  {
+    "id": "REQ-12",
+    "employee": "Sneha Kulkarni",
+    "email": "sneha.kulkarni@chillstack.example",
+    "opened": "2026-09-24",
+    "request": "I can't log into the expense tool, keeps saying invalid credentials.",
+    "initial_action": "Waiting on employee response (asked for a screenshot, no reply yet)",
+    "source": "Section 2, page 2",
+    "topic": "expense_tool",
+    "notes": "KB-08: Finance grants access; IT handles technical issues only if account exists. Key question: does an account exist? Waiting for screenshot. Do not ask for passwords. Preserve waiting state."
+  },
+  {
+    "id": "REQ-13",
+    "employee": "Aman Gupta",
+    "email": "aman.gupta@chillstack.example",
+    "opened": "2026-09-24",
+    "request": "Laptop screen is flickering on and off, had it 2 years, might just need a fix not a replacement.",
+    "initial_action": "Not started",
+    "source": "Section 2, page 2",
+    "topic": "laptop",
+    "notes": "2-year-old laptop with screen flickering. Below KB-03 3-year threshold and ASSET-Q2-2026 4-year threshold. Diagnosis and repair is the correct first step. Do not route to replacement without verified hardware failure."
+  },
+  {
+    "id": "REQ-14",
+    "employee": "Tanya Chopra",
+    "email": "tanya.chopra@chillstack.example",
+    "opened": "2026-09-25",
+    "request": "Requesting approval to install a browser extension for productivity tracking.",
+    "initial_action": "Not started",
+    "source": "Section 2, page 2",
+    "topic": "software_install",
+    "notes": "KB-04: Catalog membership unknown. Must first ask whether the extension is in the approved catalog. If confirmed non-catalog, route to IT Security review. Do not assume catalog membership in either direction."
+  },
+  {
+    "id": "REQ-15",
+    "employee": "Rahul Menon",
+    "email": "rahul.menon@chillstack.example",
+    "opened": "2026-09-25",
+    "request": "hey can you help, its not working",
+    "initial_action": "Not started",
+    "source": "Section 2, page 2",
+    "topic": "unknown",
+    "notes": "Vague request. Must ask: which device or application, what is the error or symptom, and when did it start. Follow-up information should change the next step. Do not repeat the same questions indefinitely."
+  }
+]

@@ -1,0 +1,24 @@
+# Python dependencies for ResolveDesk — AI Internal Service Agent
+#
+# Install with: pip install -r requirements.txt
+#
+# All packages are from PyPI. Versions are minimum-pinned to avoid breaking changes
+# while allowing minor updates. Tested with Python 3.12.
+
+# Streamlit — web interface framework (kept as backup)
+streamlit>=1.32.0
+
+# Groq AI Python SDK — official client for the Groq API
+groq>=1.0.0
+
+# python-dotenv — load .env files for local development
+python-dotenv>=1.0.0
+
+# FastAPI — backend REST API server (new React frontend)
+fastapi>=0.111.0
+
+# Uvicorn — ASGI server to run FastAPI
+uvicorn>=0.29.0
+
+# python-multipart — required for FastAPI form handling
+python-multipart>=0.0.9

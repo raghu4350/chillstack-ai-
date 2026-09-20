@@ -1,0 +1,122 @@
+[
+  {
+    "id": "TK-1042",
+    "employee": "R. Verma",
+    "email": "Not supplied",
+    "opened": "Not supplied",
+    "issue_summary": "VPN credential expired",
+    "source_status": "Resolved (closed)",
+    "treatment": "Closed history",
+    "is_closed": true,
+    "topic": "vpn",
+    "notes": "Immutable closed history. Not actionable. Visible as precedent context only."
+  },
+  {
+    "id": "TK-1043",
+    "employee": "S. Iyer",
+    "email": "Not supplied",
+    "opened": "Not supplied",
+    "issue_summary": "Laptop replacement (3.2 yrs old)",
+    "source_status": "Approved — pending fulfillment (active)",
+    "treatment": "Active case",
+    "is_closed": false,
+    "topic": "laptop",
+    "notes": "Active case. Approval recorded in source but fulfillment is pending. 3.2-year age raises KB-03 vs ASSET-Q2-2026 conflict. Verify supporting approval evidence before proceeding. Do not silently revoke approval, silently ship hardware, or call it closed."
+  },
+  {
+    "id": "TK-1044",
+    "employee": "A. Khan",
+    "email": "Not supplied",
+    "opened": "Not supplied",
+    "issue_summary": "Non-catalog software request",
+    "source_status": "Pending Security review (active)",
+    "treatment": "Active case",
+    "is_closed": false,
+    "topic": "software_install",
+    "notes": "Active case. Security review already in progress per KB-04. Do not duplicate or restart the review."
+  },
+  {
+    "id": "TK-1045",
+    "employee": "P. Joshi",
+    "email": "Not supplied",
+    "opened": "Not supplied",
+    "issue_summary": "Mailbox quota increase",
+    "source_status": "Approved at 35GB (closed)",
+    "treatment": "Closed history",
+    "is_closed": true,
+    "topic": "mailbox_quota",
+    "notes": "Immutable closed history. 35GB approval applies to P. Joshi only. Does not authorise another employee's quota increase."
+  },
+  {
+    "id": "TK-1046",
+    "employee": "M. Das",
+    "email": "Not supplied",
+    "opened": "Not supplied",
+    "issue_summary": "Printer paper jam, floor 2",
+    "source_status": "Resolved (closed)",
+    "treatment": "Closed history",
+    "is_closed": true,
+    "topic": "printer",
+    "notes": "Immutable closed history. Not actionable."
+  },
+  {
+    "id": "TK-1047",
+    "employee": "K. Singh",
+    "email": "Not supplied",
+    "opened": "Not supplied",
+    "issue_summary": "Home office equipment request",
+    "source_status": "Pending Finance (active)",
+    "treatment": "Active case",
+    "is_closed": false,
+    "topic": "wfh_equipment",
+    "notes": "Active case. Finance processing pending per KB-10. Do not ship equipment or mark complete merely because it reached Finance. Awaiting Finance sign-off."
+  },
+  {
+    "id": "TK-1048",
+    "employee": "T. Rao",
+    "email": "Not supplied",
+    "opened": "Not supplied",
+    "issue_summary": "Phishing email reported",
+    "source_status": "Escalated to Security — under investigation (active)",
+    "treatment": "Active case",
+    "is_closed": false,
+    "topic": "security_incident",
+    "notes": "Active case. Security investigation ongoing per KB-09. Do not claim threat is resolved. Keep case with Security."
+  },
+  {
+    "id": "TK-1049",
+    "employee": "V. Nambiar",
+    "email": "Not supplied",
+    "opened": "Not supplied",
+    "issue_summary": "Password reset",
+    "source_status": "Resolved (closed)",
+    "treatment": "Closed history",
+    "is_closed": true,
+    "topic": "password_lockout",
+    "notes": "Immutable closed history. Not actionable."
+  },
+  {
+    "id": "TK-1050",
+    "employee": "J. Fernandes",
+    "email": "Not supplied",
+    "opened": "Not supplied",
+    "issue_summary": "Admin access request",
+    "source_status": "Rejected — no business justification provided (closed)",
+    "treatment": "Closed history",
+    "is_closed": true,
+    "topic": "admin_access",
+    "notes": "Immutable closed history. Rejection was for missing justification — this does not establish a policy that any request with justification will be approved, nor does it define a complete admin access policy."
+  },
+  {
+    "id": "TK-1051",
+    "employee": "L. Menon",
+    "email": "Not supplied",
+    "opened": "Not supplied",
+    "issue_summary": "Guest Wi-Fi issued",
+    "source_status": "Resolved (closed)",
+    "treatment": "Closed history",
+    "is_closed": true,
+    "topic": "guest_wifi",
+    "notes": "Immutable closed history. Not actionable."
+  }
+]
